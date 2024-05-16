@@ -21,13 +21,13 @@ export const IssueView: FC<Props> = ({issue}) => {
   }
 
   if (!issueQuery.data) {
-    return <Navigate to="./issues/list"/>
+    return <Navigate to="./issues/list/infinite"/>
   }
 
   return (
     <div className="row mb-5">
       <div className="col-12 mb-3">
-        <Link to='./issues/list'>Go Back</Link>
+        <Link to='./issues/list/infinite'>Go Back</Link>
       </div>
 
       {/* Primer comentario */}
